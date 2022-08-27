@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="./styles/signup.css" />
+
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
     <title>signup</title>
   </head>
   <body>
+
+    <div id="nb"></div>
+
     <div id="mainCont">
       <div id="B1">
         <div id="topHeading">
           <p id="t">NEWSLETTER REGISTRATION</p>
+          <br><br>
         </div>
+       
         <div id="prefix">
           <p><input type="checkbox" />Ms.</p>
           <p><input type="checkbox" />Mrs.</p>
@@ -204,6 +212,24 @@
         </div>
       </div>
     </div>
+
+    <hr style="width:80%; margin-top: 30px; margin-left: 10%; margin-bottom: 2%;">
+
+    <div id="ftr"></div>
+
   </body>
 </html>
-<script src="signup.js"></script>
+<script src="./scripts/signup.js"></script>
+
+<script type="module">
+
+  import navbar from "./components/navbar.js"
+  document.getElementById("nb").innerHTML = navbar();
+
+  import footer from "./components/footer.js"
+  document.getElementById("ftr").innerHTML = footer();
+
+  let cartLS = JSON.parse(localStorage.getItem("cartPage")) || [];
+  document.querySelector('#count1').innerText = cartLS.length;
+
+</script>

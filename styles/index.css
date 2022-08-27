@@ -1,15 +1,4 @@
-#top_bar {
-    position: sticky;
-    top: 0px;
-    background-color: white;
-    padding: 8px;
-}
-#top_bar > h3 {
-    color:rgb(148, 1, 1);
-    text-align: center;
-    font-weight: 100;
-    font-size: 16px;
-}
+
 #big_img > img {
     width: 80%;
     margin-left: 10%;
@@ -17,12 +6,12 @@
     cursor: pointer;
 }
 #big_img_text {
-    /* border: blue 1px solid; */
+    border: blue 1px solid;
     width: 40%;
     margin-top: -30%;
     margin-left: 40%;
     color: white;
-    line-height: 30px;
+    line-height: 50px;
 }
 #big_img_text > p {
     margin-left: 10%
@@ -45,23 +34,29 @@
     font-size: 12px;
 }
 #new_arrivals {
-    width: 76%;
-    background-color: rgb(229, 229, 229);
-    margin-top: 17%;
+    width: 80%;
+    background-color: rgb(237, 236, 236);
+    margin-top: 25%;
     margin-left: 10%;
     padding: 2%;
     border: rgb(184, 183, 183) 0.5px solid;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+#new_arrivals_text >h1, #new_arrivals_text>p {
+    margin-bottom: 21px;
+}
 #new_arrivals_text {
     width: 40%;
     margin: auto;
+    height: auto;
     text-align: center;
     line-height: 20px;
+    /* border: 1px solid red; */
 }
 #new_arrivals_text > h1 {
     font-size: 40px;
     font-weight: 100;
+    line-height: 20px;
 }
 #new_arrivals_text > button {
     padding: 10px 20px;
@@ -93,11 +88,13 @@
 #best>h1, #new_from>h1,
 #already_taken>p, #best>p, #new_from>p{
     text-align: center;
+    line-height: 40px;
 }
 #a_cut_above>h1 , #carry>h1, #reboot>h1, 
 #already_taken>h1, #best>h1, #new_from>h1 {
     font-size: 35px;
     font-weight: 200;
+    margin-bottom: 3%;
 }
 #a_cut_above>a>img, #new_from>a>img {
     width:98%;

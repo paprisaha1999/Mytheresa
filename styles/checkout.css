@@ -1,12 +1,16 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+#main_checkout {
     font-weight: 100;
     font-size: 16px;
     line-height: 30px;
 }
+
 #box {
     display: flex;
     justify-content: space-between;
@@ -14,39 +18,47 @@
     width: 100%;
     padding: 20px;
 }
+
 #img_details {
     display: flex;
     justify-content: space-around;
     /* border: 1px solid blue; */
     width: 40%;
 }
-#img_details + h4 {
+
+#img_details+h4 {
     margin-right: 12%;
 }
+
 img {
     width: 150px;
     height: 150px;
 }
+
 button {
     background-color: white;
     border: none;
     color: gray;
 }
+
 #cart_products {
     /* border: 1px solid green; */
     width: 80%;
     margin: auto;
 }
-#cart_products + hr {
+
+#cart_products+hr {
     width: 80%;
 }
+
 #total_price {
     width: 80%;
-    text-align:end;
+    text-align: end;
     font-weight: bold;
     margin-top: 2%;
 }
-a > #btn1 {
+
+a>#btn1 {
     padding: 10px 20px;
     border: none;
     background-color: rgb(219, 218, 218);
@@ -61,6 +73,7 @@ a > #btn1 {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #btn2 {
     padding: 7px 40px;
     border: none;
@@ -75,6 +88,7 @@ a > #btn1 {
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 #proceed {
     width: 80%;
     display: flex;
@@ -89,44 +103,50 @@ a > #btn1 {
     width: 70%;
     margin: auto;
 }
+
 #bag {
     width: 80%;
     margin: auto;
     margin-left: 18%;
 }
+
 #xyz {
     width: 80%;
     margin: auto;
 }
 
 
-#topss>p{
+#topss>p {
     text-transform: uppercase;
     margin-top: -1%;
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: 400;
 }
-#price{
+
+#price {
     width: 14rem;
     display: flex;
     justify-content: space-around;
     font-size: 13px;
 }
+
 /* Top Section Close Here */
 
-#Bottom>p{
+#Bottom>p {
     color: gray;
     text-transform: capitalize;
     text-align: center;
     margin: 25px;
 }
-#CallMail{
+
+#CallMail {
     display: flex;
     width: 80%;
     margin: auto;
 }
-#CallMail>div{
+
+#CallMail>div {
     align-items: center;
     /* border: 1px solid gray; */
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -135,45 +155,51 @@ a > #btn1 {
     padding: 18px 10px;
     margin-right: 18px;
 }
-#CallMail>div:nth-child(1)>p{
+
+#CallMail>div:nth-child(1)>p {
     margin-bottom: 5px;
     color: gray;
     font-size: 15px;
     text-decoration: underline;
 }
-#CallMail>div:nth-child(1)>p:nth-child(2){
+
+#CallMail>div:nth-child(1)>p:nth-child(2) {
     color: black;
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 1px;
     margin-bottom: 14px;
 }
-#CallMail>div:nth-child(1)>p:nth-child(10){
+
+#CallMail>div:nth-child(1)>p:nth-child(10) {
     margin-top: 20px;
     text-decoration: none;
 }
 
-#CallMail>div:nth-child(1)>i{
+#CallMail>div:nth-child(1)>i {
     margin: 0px 0px 10px;
 }
 
 
 
-#CallMail>div:nth-child(2){
+#CallMail>div:nth-child(2) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
-#CallMail>div:nth-child(2)>p{
+
+#CallMail>div:nth-child(2)>p {
     margin-bottom: 12px;
     font-size: 15px;
     color: gray;
 }
-#CallMail>div:nth-child(2)>p:nth-child(2){
+
+#CallMail>div:nth-child(2)>p:nth-child(2) {
     margin-top: 12px;
 }
-#CallMail>div:nth-child(2)>p:nth-child(4){
+
+#CallMail>div:nth-child(2)>p:nth-child(4) {
     text-align: center;
     width: 29rem;
     color: rgb(84, 82, 82);
@@ -192,7 +218,8 @@ a > #btn1 {
     /* border: 1px solid red; */
     width: 30%;
 }
-#top>p{
+
+#top>p {
     text-transform: uppercase;
     margin-top: 20%;
     font-size: 14px;
@@ -200,23 +227,25 @@ a > #btn1 {
     font-weight: 400;
 }
 
-#top1{
+#top1 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-#top1>div:nth-child(1){
+
+#top1>div:nth-child(1) {
     width: 14rem;
     background-color: black;
     padding: 6px 0px;
     text-align: center;
     margin: 14px 0px 18px;
 }
-#top1>div:nth-child(1):hover{
+
+#top1>div:nth-child(1):hover {
     background-color: rgb(67, 67, 67);
 }
 
-#top1>div:nth-child(1)>a{
+#top1>div:nth-child(1)>a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;

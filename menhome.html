@@ -5,9 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menhome.css">
     <title>Men's Luxury Fashion & Designer</title>
+    <link rel="stylesheet" href="./styles/menhome.css">
+
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
+
+  <div id="nb"></div>
+
+  <div id="all">
     <div id="box1" onclick="menproduct()">
         <div class="box">
             <img src="https://img.mytheresa.com/media/static/raw/cms/l/MW_HP_2022_CW34/BIG1/BIG_DESKTOP_2X_20220822104207.jpg?imwidth=1180&imdensity=1">
@@ -53,7 +61,7 @@
             <p id="des4">€ 699</p>
           <!-- </div> -->
         </div>
-        <button class="btn1" onclick="button1()"><</button>
+        <button class="btn1" onclick="button1()"></button>
         <button class="btn2" onclick="button2()">></button>
       </div>
       <div class="view">
@@ -111,12 +119,11 @@
             <p class="des4" onclick="menproduct()">€ 699</p>
           <!-- </div> -->
         </div>
-        <button class="btn1" onclick="button3()"><</button>
+        <button class="btn1" onclick="button3()"></button>
         <button class="btn2" onclick="button4()">></button>
       </div>
       <div class="view">
         <button onclick="menproduct()">VIEW ALL</button>
-      </div>
       </div>
 
    <div id="box5">
@@ -174,13 +181,28 @@
             <p class="des4" onclick="menproduct()">€ 699</p>
           <!-- </div> -->
         </div>
-        <button class="btn1" onclick="button5()"><</button>
+        <button class="btn1" onclick="button5()"></button>
         <button class="btn2" onclick="button6()">></button>
       </div>
       <div class="view">
         <button onclick="menproduct()">VIEW ALL</button>
       </div>
-      </div>
+  </div>
+
+    <div id="ftr"></div>
 </body>
 </html>
-<script src="./menhome.js"></script>
+<script src="./scripts/menhome.js"></script>
+
+<script type="module">
+
+  import navbar from "./components/navbar.js"
+  document.getElementById("nb").innerHTML = navbar();
+
+  import footer from "./components/footer.js"
+  document.getElementById("ftr").innerHTML = footer();
+
+  let cartLS = JSON.parse(localStorage.getItem("cartPage")) || [];
+  document.querySelector('#count1').innerText = cartLS.length;
+
+</script>

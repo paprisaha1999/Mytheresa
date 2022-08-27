@@ -3,11 +3,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="kids.css">
+    <link rel="stylesheet" href="./styles/kids.css">
+
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
     <title>Kids Fashion-Designerkidswear</title>
 </head>
 
 <body>
+
+  <div id="nb"></div>
+
     <div id="box1">
         <div >
             <img src="https://img.mytheresa.com/media/static/raw/cms/l/Kids_HP_2022_CW31/Kids_Homepage_BigSplit_Girls_Desktop_2x_20220804154052.jpg?imwidth=1180&imdensity=1">
@@ -116,8 +123,25 @@
       </p>
   </div>
 
+  <hr style="width:80%; margin-top: 30px; margin-left: 10%; margin-bottom: 2%;">
+
+  <div id="ftr"></div>
+
 </body>
 </html>
 <script src="kids.js">
+
+</script>
+
+<script type="module">
+
+  import navbar from "./components/navbar.js"
+  document.getElementById("nb").innerHTML = navbar();
+
+  import footer from "./components/footer.js"
+  document.getElementById("ftr").innerHTML = footer();
+
+  let cartLS = JSON.parse(localStorage.getItem("cartPage")) || [];
+  document.querySelector('#count1').innerText = cartLS.length;
 
 </script>

@@ -5,12 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Women Products</title>
   <link rel="stylesheet" href="./styles/women_products.css">
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/footer.css">
 </head>
 
 <body>
+  <!-- <h1 id="count" ></h1> -->
+  <div id="nb"></div>
+
+  <select id="price" onchange="sortbyPrice()">
+    <option value="">Sort By Price</option>
+    <option value="Ascending">Low to High</option>
+    <option value="Descending">High to Low</option>
+  </select>
+
   <div id="body_main">
     <div id="mainContainer">
       <div id="filter">
@@ -108,8 +119,26 @@
     </div>
     <div id="products"></div>
   </div>
+
+  <hr style="width:80%; margin-top: 30px; margin-left: 10%; margin-bottom: 2%;">
+
+  <div id="ftr"></div>
+  
 </body>
 
 </html>
 
 <script src="./scripts/women_products.js"></script>
+
+<script type="module">
+
+  import navbar from "./components/navbar.js"
+  document.getElementById("nb").innerHTML = navbar();
+
+  import footer from "./components/footer.js"
+  document.getElementById("ftr").innerHTML = footer();
+
+  let cartLS = JSON.parse(localStorage.getItem("cartPage")) || [];
+  document.querySelector('#count1').innerText = cartLS.length;
+
+</script>

@@ -39,5 +39,6 @@ function userData(event){
     else{
         localStorage.setItem("userInfo", JSON.stringify(storage));
         alert(`${userFname} Your Order is placed `);
+        window.location.href = "index.html"
     }
 }

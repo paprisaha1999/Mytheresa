@@ -2,21 +2,28 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #products {
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 1% 4%;
     margin: 3% 5%;
+    margin-bottom: 15%;
     /* border: 2px solid green; */
 }
 
+select {
+    margin-left: 70%;
+    border: none;
+}
+
 #products>div {
-    border: 1px solid red;
-    padding: 10px
+    /* border: 1px solid red; */
+    padding: 10px;
 }
 
 #products>div>h4,
@@ -60,11 +67,12 @@ button {
     display: flex;
     width: 80%;
     margin: auto;
-    border: 1px solid green;
+    /* border: 1px solid green; */
 }
 
 #mainContainer {
     padding: 2%;
+    height: auto;
 }
 
 
@@ -75,12 +83,6 @@ button {
 
 
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 hr {
     width: 15rem;

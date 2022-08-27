@@ -126,45 +126,65 @@ let productData = [
       img: "https://img.mytheresa.com/560/560/33/jpeg/catalog/product/92/P00712998.jpg",
     },
   ]
-
-
+  
+  
   function displayData(productData) {
     document.getElementById("products").innerHTML = "";
-
+  
     productData.forEach(function (elem) {
-
+  
       let box = document.createElement("div");
-
+  
       let productImg = document.createElement("img");
       productImg.setAttribute("src", elem.img);
-
+  
       let brandName = document.createElement("h4");
       brandName.innerText = elem.brand;
-
+  
       let productName = document.createElement("p");
       productName.innerText = elem.name;
-
+  
       let productPrice = document.createElement("h4");
       productPrice.innerText = "€ " + elem.price;
-
+  
       let productCart = document.createElement("button");
       productCart.innerText = "Add to Cart";
       productCart.addEventListener("click", function () {
         addItems(elem);
       })
-
-
+  
+  
       box.append(productImg, brandName, productName, productPrice, productCart);
       document.getElementById("products").append(box);
-
+  
     })
   }
   displayData(productData)
-
+  
+  let cartLS = JSON.parse(localStorage.getItem("cartPage")) || [];
+  document.getElementById("count1").innerText = cartLS.length;
+  
   function addItems(elem) {
-    let cartLS = JSON.parse(localStorage.getItem("cartPage")) || [];
-    // console.log(elem);
     cartLS.push(elem);
+    document.getElementById("count1").innerText = cartLS.length;
     localStorage.setItem("cartPage", JSON.stringify(cartLS));
     alert("Item added to cart successfully!")
   }
+  document.getElementById("count1").innerText = cartLS.length;
+  
+  function sortbyPrice() {
+    let selected = document.querySelector("#price").value;
+    if (selected == "Ascending") {
+      productData.sort(function (a, b) {
+        return a.price - b.price;
+      })
+      displayData(productData);
+    }
+    if (selected == "Descending") {
+      productData.sort(function (a, b) {
+        return b.price - a.price;
+      })
+      displayData(productData);
+    }
+  }
+  

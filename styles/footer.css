@@ -156,3 +156,10 @@
 #icon{
     display: flex;
 }
+#icon>i{
+    padding: 7px;
+    /* margin-left: 20px; */
+}
+#icon>i:hover{
+    color: rgb(223, 37, 68);
+}

@@ -22,6 +22,10 @@
     
     
 }
+#all {
+    width: 90%;
+    margin: auto;
+}
 .btn{
     width: 16%;
     height: 28px;

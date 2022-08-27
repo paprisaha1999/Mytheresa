@@ -5,9 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Men's products</title>
-  <link rel="stylesheet" href="menproduct1.css">
+  <link rel="stylesheet" href="./styles/menproduct1.css">
+
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
+
+  <div id="nb"></div>
+
   <div id="body_main">
     <div id="mainContainer">
       <div id="filter">
@@ -114,10 +120,23 @@
         <button>ACCESSORIES</button>
       </div>
     </div>
+
+    <hr style="width:80%; margin-top: 30px; margin-left: 10%; margin-bottom: 2%;">
+    <div id="ftr"></div>
 </body>
 </html>
 
-<script src="./menproduct1.js">
- 
+<script src="./scripts/menproduct1.js"></script>
+
+<script type="module">
+
+  import navbar from "./components/navbar.js"
+  document.getElementById("nb").innerHTML = navbar();
+
+  import footer from "./components/footer.js"
+  document.getElementById("ftr").innerHTML = footer();
+
+  let cartLS = JSON.parse(localStorage.getItem("cartPage")) || [];
+  document.querySelector('#count1').innerText = cartLS.length;
 
 </script>

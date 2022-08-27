@@ -5,12 +5,12 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+#delivery{
     width: 80%;
     margin: auto;
     /* border: 1px solid red; */
 }
-#top{
+#topppppp{
     display: flex;
     width: 80%;
     margin: auto;
@@ -18,13 +18,13 @@ body{
     align-items: center;
     margin-top: 20px;
 }
-#top>a{
+#topppppp>a{
     text-transform: uppercase;
     text-decoration: none;
     color: black;
     font-size: 16px;
 }
-#top>a:hover{
+#topppppp>a:hover{
     color: gray;
 }
 #mainContainer{
@@ -151,11 +151,11 @@ body{
 #Dgrid>div>img:hover{
     width: 70%;
 }
-
+/* 
 #last{
     display: flex;
     justify-content: space-between;
-}
+} */
 #last>h3{
     font-size: 16px;
 }

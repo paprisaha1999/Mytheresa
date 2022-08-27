@@ -5,11 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="show.css">
+    <link rel="stylesheet" href="./styles/show.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <script src="https://kit.fontawesome.com/f91f5d8c4b.js" crossorigin="anonymous"></script>
+
     <title>my account</title>
 </head>
 <body>
-    <h4 id="firsthead" >For a short time only:free shipping on all orders</h3>
+
+    <div id="nb"></div>
+
+   
     <div id="maindiv">
         
         <div id="b1">
@@ -33,22 +40,28 @@
             </div>
             <div id="myAcinfo">
                 
+                
                 <div id="div1" >
+                    <br>
                     <p class="heading" >MY ACCOUNT INFORMATION</p>
                                                              <!-- show email & name here -->
                     <p id="showname"  class="textc"> username </p>
+                    <br>
                     <p id="showemail" class="textc"> useremail </p>
                 </div>
                 <div id="div2">
                    
                     <p class="textc"> > Edit</p>
+                    <br>
                     <p class="textc" id="p2"> > Change Password</p>
                 </div>
             </div>
             <div id="myAdd">
                 
                 <div id="diva" >
-                    <p class="heading" >MY ADDRESS BOOK</p>                                        
+                    <br>
+                    <p class="heading" >MY ADDRESS BOOK</p>   
+                    <br>                                     
                     <p >  Default Billing Address</p>
                     <p  class="textc">You have not set a default billing address.  </p>
                     <p> >change </p>
@@ -56,13 +69,16 @@
                 <div id="divb">
                                                            
                     <p id="adc">  Default Shipping Address</p>
+                    <br>
                     <p  class="textc">You have not set a default shipping address.  </p>
                     <p> >change </p>
                    
                 </div>
             </div>
             <div id="easy-access">
+                <br>
                 <p class="heading"> EASY-ACCESS LOGIN</p>
+                <br>
                 <p> <input type="checkbox">Do not permit automatic identification prior to logging in!  </p>
                 <button> SAVE</button>
 
@@ -73,6 +89,32 @@
         </div>
         
     </div>
+
+    <hr style="width:80%; margin-top: 30px; margin-left: 10%; margin-bottom: 2%;">
+
+    <div id="ftr"></div>
+
 </body>
 </html>
-<script src="show.js"></script>
+<script>
+    function myFunction() {
+      let dropdownContent = document.querySelector('.dropdown-content');
+      dropdownContent.classList.toggle('dropdown-toggle');
+    };
+  
+   </script>
+  
+<script src="./scripts/show.js"></script>
+
+<script type="module">
+
+    import navbar from "./components/navbar.js"
+    document.getElementById("nb").innerHTML = navbar();
+
+    import footer from "./components/footer.js"
+    document.getElementById("ftr").innerHTML = footer();
+
+    let cartLS = JSON.parse(localStorage.getItem("cartPage")) || [];
+    document.querySelector('#count1').innerText = cartLS.length;
+
+</script>

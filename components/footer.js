@@ -43,10 +43,10 @@ let footer = ()=>{
         <h1>Shop whenever, wherever with the app</h1>
         <div>
             <div>
-                <img src="./img1.jpeg" alt="error">
+                <img src="./image/img1.jpeg" alt="error">
             </div>
             <div>
-                <img src="./img2.jpeg" alt="error">
+                <img src="./image/img2.jpeg" alt="error">
             </div>
         </div>
     </div>
