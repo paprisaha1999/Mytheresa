@@ -1,29 +1,31 @@
-<h1>Nykaa Cosmetics  - Clone </h1>
+<h1>Mytheresa - Clone </h1>
 
 ![mytheresa app](https://user-images.githubusercontent.com/106386112/210103593-0769cb79-0439-4f1b-a99c-35b0a638555c.png)
 
 
-Nykaa.com is an Indian e-commerce company, founded by Falguni Nayar in 2012 and headquartered in Mumbai. It sells beauty, wellness and fashion products across websites.[4] In 2020, it became the first Indian unicorn startup headed by a woman.
+Mytheresa is a German e-commerce luxury fashion company, with headquarters in Munich, Germany. Founded in 2006, it operates local-language based websites for international markets in English, German, Spanish, French, Italian, Arabic, Chinese and Korean.
 
-<h3>Website Link : https://lustrous-entremet-5aa626.netlify.app/ </h3>
+<h3>Website Link : https://superlative-lily-39163c.netlify.app/ </h3>
 
 <h3>Features:</h3>
 
+~ Navbar, Footer
+
 ~ Landing Page
 
-~ Import Export 
+~ Men's Page, Women's Page, Kids' Page, Life Page
 
-~ Filter & Sorting functionality
+~ Men's Products Page, Women's Products Page, New Arrival Products Page
 
-~ Pagination Functionality
+~ Sorting functionality
 
-~ Signup Page & Login Page with Authentication & Validation
-
-~ Log out Functionality
+~ Signup Page & Login Page
 
 ~ Proper Cart Functionality
 
+~ Checkout Page
+
 <h3>Tech Stack:</h3> 
 
-HTML | CSS | JavaScript | ReactJS | DOM | ChakraUI
+HTML | CSS | JavaScript | DOM
 
